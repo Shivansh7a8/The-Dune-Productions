@@ -1,0 +1,14 @@
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+
+# Backend
+backend/target/
+backend/.mvn/
+
+# OS / IDE
+.DS_Store
+*.iml
+.idea/
+.vscode/

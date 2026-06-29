@@ -1,0 +1,40 @@
+
+<div class="chat-container">
+<div class="chat-icon" (click)="opened=!opened">
+    💬
+</div>
+
+<div class="chat-window" *ngIf="opened">
+
+    <div class="header">
+        Dune Assistant
+    </div>
+
+    <div class="messages">
+
+        <div
+        *ngFor="let msg of messages"
+        [class.user]="msg.sender==='user'"
+        [class.bot]="msg.sender==='bot'">
+
+            {{msg.text}}
+
+        </div>
+
+    </div>
+
+    <div class="input">
+
+        <input
+        [(ngModel)]="message"
+        (keyup.enter)="send()"
+        placeholder="Ask something..." />
+
+        <button (click)="send()">
+            Send
+        </button>
+
+    </div>
+
+</div>
+</div>
