@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-const API_BASE = 'http://localhost:8080/api';
+const API_BASE = 'https://the-dune-productions.onrender.com/api';
 
 export interface ContactMessage {
   fullName: string;
