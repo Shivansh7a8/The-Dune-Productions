@@ -1,11 +1,18 @@
 # ---------- Stage 1: Build ----------
-FROM maven:4.0.0-eclipse-temurin-17 AS build
-WORKDIR /app
+FROM maven:3.9.9-eclipse-temurin-21 AS build
+
+WORKDIR /backend
+
 COPY . .
+
 RUN mvn clean package -DskipTests
-# ---------- Stage 2: Run ----------
-FROM eclipse-temurin:17-jdk
-WORKDIR /app
-COPY --from=build /app/target/*.jar app.jar
+
+FROM eclipse-temurin:21-jre
+
+WORKDIR /backend
+
+COPY --from=build /backend/target/*.jar api-1.0.0.jar
+
 EXPOSE 8080
-CMD ["java", "-jar", "app.jar"]
+
+CMD ["java","-jar","app.jar"]
