@@ -15,4 +15,4 @@ COPY --from=build /backend/target/*.jar api-1.0.0.jar
 
 EXPOSE 8080
 
-CMD ["java","-jar","app.jar"]
+CMD ["java","-jar","api-1.0.0.jar"]
