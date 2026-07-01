@@ -52,7 +52,7 @@ import { RouterLink } from "@angular/router";
             <i class="bi bi-envelope-fill"><img src="./assets/mail.png" /></i>
           </a>
 
-          <a href="https://linkedin.com/company/duneverse" target="_blank">
+          <a href="https://www.linkedin.com/company/the-dune-productions-pvt-ltd/" target="_blank">
             <i class="bi bi-linkedin"><img src="./assets/linkedin.png" /></i>
           </a>
         </span>
