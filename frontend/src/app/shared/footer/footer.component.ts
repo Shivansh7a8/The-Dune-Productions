@@ -47,7 +47,8 @@ import { RouterLink } from "@angular/router";
             <i class="bi bi-whatsapp"> <img src="./assets/whatsapp.png" /> </i>
           </a>
 
-          <a href="mailto:hello@duneverse.com">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hello@duneverse.com"
+          target="_blank">
             <i class="bi bi-envelope-fill"><img src="./assets/mail.png" /></i>
           </a>
 
