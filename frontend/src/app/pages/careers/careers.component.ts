@@ -131,7 +131,7 @@ import { ApiService, JobOpening } from "../../core/api.service";
         </div>
 
         <form
-          class="card form"
+          class="card2 form"
           (ngSubmit)="submitApplication()"
           #appForm="ngForm"
         >
