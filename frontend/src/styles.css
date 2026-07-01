@@ -212,6 +212,17 @@ img {
 
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.18);
 }
+.card2 {
+  background: #f6ead7;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px;
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in-out;
+}
 .tag {
   display: inline-block;
   font-size: 0.72rem;
