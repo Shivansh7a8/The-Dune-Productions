@@ -21,7 +21,7 @@ import { ApiService } from "../../core/api.service";
 
     <section class="section">
       <div class="container contact-grid">
-        <form class="card form" (ngSubmit)="submit()" #f="ngForm">
+        <form class="card2 form" (ngSubmit)="submit()" #f="ngForm">
           <div class="row2">
             <label
               >Full Name
